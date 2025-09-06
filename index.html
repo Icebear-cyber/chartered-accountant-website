@@ -1,146 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chatterd Accounting | AI-Powered Financial Clarity</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💬</text></svg>">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.12.0/cdn.min.js" defer></script>
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-    </style>
+    <title>Chartered Accountant | Professional Financial Services</title>
+    <meta charset="utf-8"/>
+    <meta name="Description" content="Professional Chartered Accountant Services" />
+    <meta name="keywords" content="Chartered Accountant, Tax Services, GST, Financial Planning" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-sm py-4">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <div class="font-bold text-2xl text-blue-600 flex items-center">
-                💬 Chatterd
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <div class="widget-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>201, Logiq Gen, KPHB Colony, Hyderabad</span>
+                </div>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#services" class="text-gray-600 hover:text-blue-600">Services</a>
-                <a href="#how-it-works" class="text-gray-600 hover:text-blue-600">How It Works</a>
-                <a href="#testimonials" class="text-gray-600 hover:text-blue-600">Testimonials</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600">Pricing</a>
-            </div>
-            <div>
-                <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-200">
-                    Get Started
-                </button>
+            <div class="top-bar-right">
+                <div class="widget-container">
+                    <i class="far fa-clock"></i>
+                    <span>Mon - Sat: 9:00 - 18:00</span>
+                </div>
+                <div class="widget-container">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 9849665933</span>
+                </div>
+                <div class="widget-container">
+                    <i class="far fa-envelope"></i>
+                    <span>vishnuvardhandumpala33@gmail.com</span>
+                </div>
+                <ul class="socialize">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
             </div>
         </div>
-    </nav>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.png" alt="Chartered Accountant Logo" class="logo">
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="#">Home</a></li>
+                    <li class="nav-item"><a href="#">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Services</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Income Tax Filing</a></li>
+                            <li><a href="#">Investment & Financial Planning</a></li>
+                            <li><a href="#">Retirement Planning</a></li>
+                            <li><a href="#">GST Registration & Returns Filing</a></li>
+                            <li><a href="#">NRI Income Tax Filing</a></li>
+                            <li><a href="#">Company Incorporation & Annual Filings</a></li>
+                            <li><a href="#">Book keeping & Outsourcing</a></li>
+                            <li><a href="#">TDS Return Filing</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">GST</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">GST Portal</a></li>
+                            <li><a href="#">E-way Bill Portal</a></li>
+                            <li><a href="#">Acts & Rules</a></li>
+                            <li><a href="#">Circulars & Notifications</a></li>
+                            <li><a href="#">Forms</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#">Knowledge Bank</a></li>
+                    <li class="nav-item"><a href="#">FAQ</a></li>
+                    <li class="nav-item"><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section class="container mx-auto px-4 py-16 md:py-24 text-center">
-        <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-6">Accounting that <span class="text-blue-600">Talks Back.</span></h1>
-        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-10">Meet your AI-powered accounting partner. Get real-time financial insights, automated bookkeeping, and expert advice, all through a simple chat interface.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition duration-200 shadow-lg">
-                Start Your Free Trial
-            </button>
-            <button class="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg text-lg transition duration-200 border border-blue-600">
-                Book a Demo
-            </button>
+    <section class="home-slider-area">
+        <div class="slide-item" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+            <div class="slide-item-box">
+                <div class="slidertext2">Professional Financial Services</div>
+                <div class="slidertext3">Chartered Accountant Firm</div>
+                <p>We have more than 30 staff comprising of Chartered Accountants, Advocates, Company Secretary & other highly skilled professionals.</p>
+                <a href="#">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        <div class="mt-12 mx-auto max-w-4xl bg-white p-2 rounded-xl shadow-lg">
-            <img src="https://placehold.co/800x450/3b82f6/white?text=AI+Chat+Interface+Demo" alt="Chatterd App Interface" class="rounded-lg">
+    </section>
+
+    <!-- About Section -->
+    <section class="hm-about">
+        <div class="container">
+            <div class="page-title">
+                <h2>Welcome to <span>Chartered Accountant Firm</span></h2>
+            </div>
+            <p><strong>Chartered Accountant Firm</strong> is an eminent CA firm, registered under ICAI, managed by a team of professionals with more than 2 decades of experience. The firm aims to provide end-to-end solutions to clients across all industries in the financial sector.</p>
+            <p>We cater a full bouquet of financial services which includes Audit & Assurance services, Accounting services, Taxation services, Legal services, Valuation services, Documentation services, Consultancy services and complete Business solutions.</p>
+            <a href="#" class="read-more">Read More <i class="fas fa-angle-right"></i></a>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="bg-white py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">How Can Chatterd Help?</h2>
-            <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">We handle the numbers so you can focus on your business.</p>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-4xl mb-4">🤖</div>
-                    <h3 class="font-semibold text-xl mb-2">AI-Powered Bookkeeping</h3>
-                    <p class="text-gray-600">Automate expense tracking, invoicing, and reconciliation with our intelligent chatbot.</p>
+    <section class="hm-services">
+        <div class="container">
+            <div class="page-title">
+                <h2>Our <span>SERVICES</span></h2>
+                <p>We understand that for any organization to be successful SERVICE is the key factor and hence we always strive to provide our clients the best possible services.</p>
+            </div>
+            <div class="services-grid">
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Corporate and International Tax</h3>
+                    <p>Due to the evolving nature of tax laws and constant amendments, the tax landscape requires expert navigation.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-4xl mb-4">💡</div>
-                    <h3 class="font-semibold text-xl mb-2">Instant Financial Insights</h3>
-                    <p class="text-gray-600">Ask questions like "What were my profits last month?" and get answers instantly from your data.</p>
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Transfer Pricing</h3>
+                    <p>Globalisation and the continued growth of international trade have made intercompany pricing increasingly important.</p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl text-center hover:shadow-md transition duration-200">
-                    <div class="text-blue-600 text-4xl mb-4">👨‍💼</div>
-                    <h3 class="font-semibold text-xl mb-2">Expert Human Support</h3>
-                    <p class="text-gray-600">Get connected to a certified accountant for complex advice, tax filing, and strategic planning.</p>
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Tax Dispute Resolution</h3>
+                    <p>The tax environment is increasingly complex making the management of tax risk and controversies essential.</p>
+                </div>
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Mergers & Acquisitions</h3>
+                    <p>Businesses constantly evolve to survive and thrive. Whether you are looking to expand or consolidate.</p>
+                </div>
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Regulatory & Corporate Secretarial</h3>
+                    <p>Entities are bound by various regulatory laws and it is important that they comply with all requirements.</p>
+                </div>
+                <div class="services-box">
+                    <div class="iconbox-icon-container">
+                        <i class="fas fa-receipt"></i>
+                    </div>
+                    <h3>GST Services</h3>
+                    <p>GST is a transaction tax that subsumes most of the legacy indirect taxes levied by central and state governments.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section id="how-it-works" class="py-16 bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">How It Works</h2>
-            <div class="flex flex-col md:flex-row gap-10 items-center justify-center">
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-blue-600 text-white text-2xl font-bold rounded-full flex items-center justify-center mb-4">1</div>
-                    <h3 class="font-semibold text-xl">Connect Your Accounts</h3>
-                    <p class="text-gray-600">Securely link your bank, credit cards, and payment processors.</p>
+    <!-- News Section -->
+    <section class="news-sec">
+        <div class="container">
+            <div class="page-title">
+                <h2>News, Due Date Reminder and Blog</h2>
+            </div>
+            <div class="news-grid">
+                <div class="news-box">
+                    <h3><i class="fas fa-newspaper"></i> Latest News</h3>
+                    <div class="news-content">
+                        <div class="news-item">
+                            <span class="news-date">18 Dec 2023</span>
+                            <a href="#">Govt Informs 15th FFC About Implausibility of Meeting Revenue Targets</a>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">17 Dec 2023</span>
+                            <a href="#">No excuses, target over Rs 1 lakh crore GST collection in remaining months</a>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">16 Dec 2023</span>
+                            <a href="#">GST Council meeting: Lease rates, refund for exporters on agenda</a>
+                        </div>
+                        <div class="news-item">
+                            <span class="news-date">15 Dec 2023</span>
+                            <a href="#">CBIC extends enabling New Changes in GSTR-9 and GSTR-9C</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-blue-600 text-white text-2xl font-bold rounded-full flex items-center justify-center mb-4">2</div>
-                    <h3 class="font-semibold text-xl">Start Chatting</h3>
-                    <p class="text-gray-600">Ask questions, upload receipts, or request reports—all by chat.</p>
+                <div class="news-box">
+                    <h3><i class="far fa-calendar-alt"></i> Due Date Reminder</h3>
+                    <div class="due-date-tabs">
+                        <div class="tabs">
+                            <button class="tab-btn active">Dec 2023</button>
+                            <button class="tab-btn">Jan 2024</button>
+                        </div>
+                        <div class="due-date-content">
+                            <div class="due-date-item">
+                                <span class="date">20 Dec</span>
+                                <span class="desc">GSTR-1 for November 2023</span>
+                            </div>
+                            <div class="due-date-item">
+                                <span class="date">25 Dec</span>
+                                <span class="desc">TDS Payment for December 2023</span>
+                            </div>
+                            <div class="due-date-item">
+                                <span class="date">31 Dec</span>
+                                <span class="desc">GSTR-3B for November 2023</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-center">
-                    <div class="w-16 h-16 mx-auto bg-blue-600 text-white text-2xl font-bold rounded-full flex items-center justify-center mb-4">3</div>
-                    <h3 class="font-semibold text-xl">Grow Smarter</h3>
-                    <p class="text-gray-600">Get proactive alerts and insights to make better financial decisions.</p>
+                <div class="news-box">
+                    <h3><i class="fas fa-blog"></i> Blog Updates</h3>
+                    <div class="blog-content">
+                        <div class="blog-item">
+                            <span class="blog-date">09 Dec 2023</span>
+                            <a href="#">Understanding the Latest Changes in GST Filing Procedures</a>
+                        </div>
+                        <div class="blog-item">
+                            <span class="blog-date">05 Dec 2023</span>
+                            <a href="#">Tax Saving Strategies for the Upcoming Financial Year</a>
+                        </div>
+                        <div class="blog-item">
+                            <span class="blog-date">01 Dec 2023</span>
+                            <a href="#">How to Choose the Right Business Structure for Your Startup</a>
+                        </div>
+                        <div class="blog-item">
+                            <span class="blog-date">28 Nov 2023</span>
+                            <a href="#">Important Changes in Income Tax Rules for FY 2023-24</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">What Our Clients Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-                    <p class="text-gray-600 italic mb-4">"Chatterd saved me 10 hours a month on bookkeeping. I just send a photo of my receipts and it's done. It's like magic."</p>
-                    <p class="font-semibold">- Sarah K., Freelancer</p>
+    <!-- Team Section -->
+    <section class="hm-team">
+        <div class="container">
+            <div class="page-title">
+                <h2>Our Team</h2>
+                <p>Our team comprises of competent professionals with extensive knowledge, calibre and experience who specialize in their respective fields.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Member">
+                    </div>
+                    <h3>vishnu vardhan</h3>
+                    <p>FCA, LLB, B.COM</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                    </div>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm">
-                    <p class="text-gray-600 italic mb-4">"As a small business owner, having instant access to my cash flow forecast is a game-changer. The AI spotted a tax saving I had completely missed!"</p>
-                    <p class="font-semibold">- Michael T., Cafe Owner</p>
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Member">
+                    </div>
+                    <h3>Harsha vardhan</h3>
+                    <p>FCA, M.COM</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-img">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team Member">
+                    </div>
+                    <h3>Mike Jordan</h3>
+                    <p>FCA, CS, B.COM</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="far fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
-    <section class="py-16 bg-blue-600 text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Accounting?</h2>
-            <p class="text-xl mb-10 max-w-2xl mx-auto">Join hundreds of businesses that use Chatterd to save time and gain financial clarity.</p>
-            <button class="bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-lg text-lg transition duration-200 shadow-lg">
-                Sign Up Free for 14 Days
-            </button>
+    <!-- Contact Section -->
+    <section class="hm-contact">
+        <div class="container">
+            <div class="contact-flex">
+                <div class="contact-info">
+                    <h2>Request <span>a call back</span></h2>
+                    <p>For a live discussion or consulting request a phone call back. Submit your info via the form and one of our expert advisors will get in touch within 24 hours or just send us an email.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Our Office</h4>
+                                <p>B-9, Second Floor, Mahalaxmi Nagar, Behind WTP South Block, Malviya Nagar, Jaipur - 302017 (Raj.)</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p>0141-4072000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="far fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>info@cafirm.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Number" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email ID" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea placeholder="Type Your Message.." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-400 py-12">
-        <div class="container mx-auto px-4">
-            <div class="text-center">
-                <div class="font-bold text-2xl text-white mb-4">💬 Chatterd</div>
-                <p class="mb-6">The future of accounting is conversational.</p>
-                <div class="flex justify-center space-x-6 mb-6">
-                    <a href="#" class="hover:text-white">Privacy Policy</a>
-                    <a href="#" class="hover:text-white">Terms of Service</a>
-                    <a href="#" class="hover:text-white">Contact Us</a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Who we are</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
                 </div>
-                <p>© 2023 Chatterd Accounting. All rights reserved.</p>
+                <div class="footer-col">
+                    <h3>What we do</h3>
+                    <ul>
+                        <li><a href="#">Transfer Pricing</a></li>
+                        <li><a href="#">Tax Dispute Resolution</a></li>
+                        <li><a href="#">Mergers & Acquisitions</a></li>
+                        <li><a href="#">Regulatory & Corporate Secretarial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Important Links</h3>
+                    <ul>
+                        <li><a href="#">Income Tax Department</a></li>
+                        <li><a href="#">GST Portal</a></li>
+                        <li><a href="#">Ministry of Corporate Affairs</a></li>
+                        <li><a href="#">RBI</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>B-9, Second Floor, Mahalaxmi Nagar, Behind WTP South Block, Malviya Nagar, Jaipur - 302017 (Raj.)</p>
+                    <p><strong>Phone:</strong> 0141-4072000</p>
+                    <p><strong>Email:</strong> info@cafirm.com</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>&copy; 2023 <strong>Chartered Accountant Firm</strong>. All Rights Reserved</p>
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
